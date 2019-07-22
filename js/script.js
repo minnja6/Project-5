@@ -66,13 +66,10 @@ function createEmployeeCard(employeeList){
                     <p class="modal-text cap">${employee.location.street}, ${employee.location.city}, ${employee.location.state} ${employee.location.postcode}</p>
                     <p class="modal-text">${(new Date(employee.dob.date)).toLocaleDateString("en-US", options)}</p>
                 </div>
-            </div>;`
+            </div>`;
     $('body').append(modalContainer);
     //removing the modal when the 'x' button is clicked 
     $('#modal-close-btn').on('click', function(event){
         $('.modal-container').remove();
     });  
-    }
-   
-        
-        
+  }
